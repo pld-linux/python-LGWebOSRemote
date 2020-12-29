@@ -109,8 +109,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{egg_name}-%{version}-py*.egg-info
-%dir %{_sysconfdir}/lgtv
-%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/lgtv/config.json
+#%dir %{_sysconfdir}/lgtv
+#%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/lgtv/config.json
 %endif
 
 %if %{with python3}
